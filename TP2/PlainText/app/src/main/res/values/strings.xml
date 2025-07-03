@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PlainText</string>
+    <string name="textIntroducao">textIntroducao</string>
+    <string name="message">Digite suas credenciais para continuar</string>
+    <string name="TextPassword">Senha:</string>
+    <string name="editLogin" />
+    <string name="editPassword" />
+    <string name="TextLogin">"Login: "</string>
+    <string name="login">Login:</string>
+    <string name="password">Senha:</string>
+    <string name="saveLogin">Salvar informação de Login</string>
+    <string name="enter">ENTRAR</string>
+    <string name="SloganText">\"The most secure password manager\"</string>
+    <string name="SloganAuthors">Bob and Alice</string>
+    <string name="sobre">Sobre</string>
+    <string name="configs">Configurações</string>
+    <string name="textBemVindo">Olá, aqui ficará a lista de senhas!</string>
+    <string name="PreferenceCategory">Geral</string>
+</resources>

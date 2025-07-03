@@ -1,0 +1,29 @@
+# Android Studio
+.idea/
+*.iml
+
+# Build
+/build/
+*/build/
+
+# Gradle
+.gradle/
+local.properties
+
+# Logs
+*.log
+
+# Outros arquivos temporários
+*.tmp
+*.temp
+*.swp
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Keystore
+*.jks
+
+# Crashlytics/Firebase
+crashlytics-build.properties
