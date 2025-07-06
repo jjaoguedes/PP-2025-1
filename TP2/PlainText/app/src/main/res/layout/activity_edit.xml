@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#a1c639"
+        android:gravity="left|center_vertical"
+        android:paddingStart="30dp"
+        android:text="@string/addTitle"
+        android:textAlignment="gravity"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageName"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageLogin"
+        app:layout_constraintEnd_toStartOf="@+id/addName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/addName"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/add_name" />
+
+    <ImageView
+        android:id="@+id/imageLogin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/imagePassword"
+        app:layout_constraintEnd_toStartOf="@+id/addLogin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageName"
+        app:layout_constraintTop_toTopOf="@+id/addLogin"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/add_user" />
+
+    <ImageView
+        android:id="@+id/imagePassword"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageNotes"
+        app:layout_constraintEnd_toStartOf="@+id/addPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageLogin"
+        app:layout_constraintTop_toTopOf="@+id/addPassword"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/add_key" />
+
+    <ImageView
+        android:id="@+id/imageNotes"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/addNotes"
+        app:layout_constraintEnd_toStartOf="@+id/addNotes"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imagePassword"
+        app:layout_constraintTop_toTopOf="@+id/addNotes"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/add_notes" />
+
+    <EditText
+        android:id="@+id/addName"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="44dp"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:text="Nome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+    <EditText
+        android:id="@+id/addLogin"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="@+id/addName"
+        app:layout_constraintTop_toBottomOf="@+id/addName" />
+
+    <EditText
+        android:id="@+id/addPassword"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:text="Senha"
+        app:layout_constraintEnd_toEndOf="@+id/addLogin"
+        app:layout_constraintTop_toBottomOf="@+id/addLogin" />
+
+    <EditText
+        android:id="@+id/addNotes"
+        android:layout_width="280dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Notas"
+        app:layout_constraintEnd_toEndOf="@+id/addPassword"
+        app:layout_constraintTop_toBottomOf="@+id/addPassword" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:onClick="salvarClicado"
+        android:text="SALVAR"
+        app:layout_constraintTop_toBottomOf="@+id/addNotes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

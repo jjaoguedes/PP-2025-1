@@ -16,4 +16,5 @@
     <string name="configs">Configurações</string>
     <string name="textBemVindo">Olá, aqui ficará a lista de senhas!</string>
     <string name="PreferenceCategory">Geral</string>
+    <string name="addTitle">Senha</string>
 </resources>
